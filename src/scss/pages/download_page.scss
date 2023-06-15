@@ -1,0 +1,73 @@
+
+.download_page {
+    .download_page_container {
+        margin: 0px auto 62px auto;
+        h1 {
+            font-weight: 600;
+            font-size: 1.4em;
+            margin-bottom: 16px;
+        }
+        .download_page_text {
+            h2 {
+                font-weight: 600;
+                margin-bottom: 14px;
+            }
+            span {
+                margin-bottom: 12px;
+                line-height: 1.3em;
+            }
+        }
+        .download_page_blocks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 24px;
+            .download_block {
+                width:31.59%;
+                min-width: 190px;
+                margin-bottom: 24px;
+                border-radius: 12px;
+                padding-top:24px;
+                box-sizing: border-box;
+                overflow: hidden;
+                box-shadow: 0 0 4px rgba(0,0,0,.4);
+                transition: box-shadow .5s;
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    img {
+                    width:120px;
+                    margin: 0 auto;
+                    }
+                    p {
+                        text-align: center;
+                        margin: 12px 0;
+                        font-weight: 600;
+                    }
+
+                    .download_btn {
+                        display: block;
+                        text-align: center;
+                        padding: 12px 0;
+                        color:#fff;
+                        background: #0087F0;
+                        position: relative;
+                        top:2px;
+                        transition: background .5s;
+                    }
+                    .download_btn:hover {
+                        background: #0079d5;
+                    }
+                }
+            }
+            .download_block:hover {
+                box-shadow: 0 0 8px rgba(0,0,0,.4);
+            }
+            .download_block_gray {
+                opacity: .5;
+            }
+        }
+    }
+}

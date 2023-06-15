@@ -1,0 +1,84 @@
+.access_demands_labrarian {
+    .access_demands_labrarian_container {
+        >div {
+            padding-bottom: 32px;
+            >table {
+                width:100%;
+                margin-top: 32px;
+                >tbody {
+                    >tr:nth-child(odd) {
+                        background:#eeeeee;
+                    }
+                    >tr {
+                        box-sizing: border-box;
+                        padding: 12px 6px;
+                        display: grid;
+                        grid-template-columns: 40px auto 1fr;
+                        align-items: center;
+                        >td {
+                            width:auto!important;
+                            padding: 0px 0px 0px 6px;
+                        }
+
+                        >td:nth-child(4) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            >.ge-dialog {
+                > div {
+                    table{
+                        width: 100%;
+                        tbody {
+                            tr {
+                                display: grid;
+                                grid-template-columns: 178px 1fr;
+                                margin-bottom: 12px;
+                                td {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    input[type="text"],select,input[type="number"] {
+                                        width:100%!important;
+                                        padding: 12px 14px;
+                                        box-sizing: border-box;
+                                        border: 1px solid #d3d3d3;
+                                        color:#000;
+                                        background: #fff;
+                                        border-radius: 12px;
+                                        transition: color .5s, background .5s;
+                                    }
+                                    input[type="text"]:hover,select:hover,input[type="number"]:hover {
+                                        border: 1px solid #0087F0;
+                                        color:#0087F0;
+                                    }
+                                    input[type="text"]:disabled, input[type="number"]:disabled {
+                                        border: 1px solid #f4f4f4!important;
+                                        background: #f4f4f4;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            >input[type="button"] {
+                padding: 14px 12px;
+                box-sizing: border-box;
+                border: 1px solid #0087F0;
+                color:#0087F0;
+                background: #fff;
+                border-radius: 12px;
+                transition: background .5s, color .5s;
+                margin:12px 12px 0 0px;
+            }
+            >input[type="button"]:hover {
+                background: #0087F0;
+                color:#fff;
+            }
+        }
+    }
+}

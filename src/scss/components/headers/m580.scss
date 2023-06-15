@@ -1,0 +1,36 @@
+.guest_main_header {
+    .hide_logo {
+        display: block;
+        height:28px;
+    }
+    .sett_font {
+        display: none;
+    }
+    .contrast {
+        display: none;
+    }
+}
+
+.student_pop-up {
+    width:100%;
+    height:100%;
+    right: 0;
+}
+
+.links_app_big_banner {
+    background: #6BD2FD;
+    > div {
+        > div {
+            width:37.04%;
+        }
+        > span {
+            max-width: 100%;;
+            width:100%;
+            padding-top: 0px;
+        }
+    }
+}
+
+.book_sticker ._container .book_sticker_book {
+    min-width: 0px;
+}

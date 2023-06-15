@@ -1,0 +1,40 @@
+.guest_main_header {
+    .sett_font {
+        width:20.15%;
+        min-width: 140px;
+        span {
+            display: none;
+        }
+    }
+}
+
+.sub_header_top {
+    .sub_header_container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        .logo_main {
+            margin-right: 20px;
+            margin-bottom: 40px;
+        }
+        .sub_header_search_column {
+            width:100%;
+            .search_container {
+                min-width: auto;
+            }
+        }
+        .sub_header_switch_lang {
+            display: block;
+            position: absolute;
+            top: 76px;
+            right: 0;
+        }
+        .wrap-basket-sign {
+            bottom: 12px;
+        }
+    }
+}
+
+.sub_header_top .sub_header_container .sub_header_search_column .search_container .sub_header_search {
+    max-width: 100%;
+}

@@ -1,0 +1,228 @@
+.reports_page {
+    margin-bottom: 62px;
+    ._container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .reports_container {
+        padding: 32px 32px 0 32px;
+        > div {
+            display: flex;
+            flex-direction: column;
+        }
+        .bm-title {
+            display: none;
+            order: 1;
+        }
+        .ge-spanel {
+            order: 2;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-bottom: 14px;
+            position: relative;
+            .select_over {
+                width:100%;
+                order:3;
+                display: block;
+                border-bottom: 1px solid #d3d3d3;
+                select {
+                    height: 100%;
+                    width:100%!important;
+                    margin: 12px 0px 8px 0px!important;
+                    font-size: 1.1rem;
+                }
+            }
+            .ge-stext {
+                order: 1;
+                //margin:0 0 12px 0;
+            }
+            .ge-button {
+                width:100px;
+            }
+            select {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:#000;
+                border: none;
+                border-radius: 26px;
+                background: #fff;
+                transition: all .5s;
+                font-size: 1rem;
+                outline: none;
+            }
+            select:active {
+                border: none;
+            }
+            input[type='button'] {
+                order: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                padding: 6px 12px;
+                box-sizing: border-box;
+                color:#0087F0;
+                border: 1px solid #0087F0;
+                background: #fff;
+                border-radius: 24px;
+                transition: background .5s, color .5s;
+            }
+            input[type='button']:hover {
+                background: #0087F0;
+                color:#fff;
+            }
+            input[type='text'] {
+                width:10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                padding: 8px 24px;
+                box-sizing: border-box;
+                color:#000;
+                border: 1px solid #000;
+                border-radius: 26px;
+                background: #fff;
+                transition: all .5s;
+                margin-right:12px;
+                order: 1;
+                flex-grow: 1;
+            }
+        }
+        .ge-cmds {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            order: 5;
+            margin: 14px 0;
+            input[type="text"] {
+                background: 0;
+                padding: 6px 12px;
+                box-sizing: border-box;
+                border: 1px solid #d3d3d3;
+                color:#000;
+                background: #fff;
+                border-radius: 12px;
+                transition: all .5s;
+            }
+            input[type="text"]:active {
+                border: 1px solid #0087F0;
+                color:#0087F0;
+            }
+
+            input[type="button"] {
+                text-align: center;
+                border-radius: 24px;
+                border: 1px solid #0087F0 ;
+                color:#0087F0;
+                background: #fff;
+                transition: all .5s;
+            }
+            input[type="button"]:hover {
+                color:#fff;
+                background:#0087F0;
+            }
+
+            a, span {
+                margin:0 0 12px 6px;
+                width: 44px; height:44px;
+                border-radius: 34px;
+            }
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #0087F0;
+                color:#0087F0;
+                transition: all .5s;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #d3d3d3;
+                color:#000;
+                transition: all .5s;
+            }
+            a:hover {
+                border: 1px solid #0087F0;
+                color:#0087F0;
+            }
+            .ge-pgs-info {
+                width:100%;
+                text-align: center;
+            }
+        }
+
+        .ge-pgs-buttons {
+            order: 4;
+            display: flex;
+            justify-content: center;
+            input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                box-sizing: border-box;
+                color:#666666;
+                font-weight: 300;
+                background: #fff;
+                transition: all .5s;
+                text-decoration: underline;
+                border: none;
+            }
+            input:hover {
+                color:#0087F0;
+            }
+            input:first-child {
+                margin-right:12px;
+            }
+        }
+        .d2dlg_table {
+            order: 3;
+            .d2dlg_row {
+                margin: 14px 0;
+                padding:0 28px 44px 14px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #d3d3d3;
+                display: grid;
+                grid-template-columns: auto 1fr;
+                column-gap: 4px;
+                position: relative;
+                >div:nth-child(3) {
+                    position: absolute;
+                    right:0; bottom: 14px;
+                    a {
+                        transition: color .5s;
+                        color:#333;
+                        text-decoration: underline;
+                    }
+                    
+                }
+                >div:nth-child(3):hover {
+                    a {
+                        color:#0087F0;
+                    }
+                }
+                >div:first-child {
+                    color:#666666;
+                    font-weight: 600;
+                }
+                >div {
+                    background: #fff!important;
+                    input {
+                        position: absolute;
+                        top:0px; right:0px;
+                        width: 14px; height:14px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

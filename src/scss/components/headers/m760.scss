@@ -1,0 +1,13 @@
+.sub_header_top {
+    .sub_header_container {
+        position: relative;
+        justify-content: flex-start;
+        .logo_main {
+            margin-right: 20px;
+        }
+        .sub_header_search_column {
+            width:67%;
+        }
+
+    }
+}

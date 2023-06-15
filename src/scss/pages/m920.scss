@@ -1,0 +1,197 @@
+.news_container {
+
+    .idx_news {
+
+        .news_el {
+            flex-wrap: wrap;
+            >div {
+                width:48%;
+                max-width: 320px;
+                min-height: 380px;
+            }
+            >div:nth-child(1), >div:nth-child(2) {
+                margin-bottom: 30px;
+            }
+
+        }
+    }
+}
+
+.guest_idx_nav {
+
+    .guest_idx_nav_container {
+
+        grid-template-columns: 1fr;
+        gap:24px;
+        .idx_nav_el:nth-child(1), 
+        .idx_nav_el:nth-child(2),
+        .idx_nav_el:nth-child(3),
+        .idx_nav_el:nth-child(4) {
+            background-size:100%;
+        }
+
+        .idx_nav_el {
+            height: 29.166vw;
+            min-height: 100px;
+            max-height: 216px;
+        }
+    }
+}
+
+.g_idx_banner {
+    margin-bottom: 46px;
+    .g_idx_banner_container {
+
+        span {
+            display: none;
+        }
+
+    }
+}
+
+.main_content_news {
+    ._container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .news_links {
+            order:2;
+            margin-top: 24px;
+        }
+        .news_coll {
+            order: 1;
+        }
+    }
+
+}
+
+.left_container {
+    a, span, .utab_adisabled { 
+        font-size: 1em;
+    }
+}
+
+.bmarks_page {
+    ._container {
+        .right_container {
+            h2, a, span {
+                font-size: 1em;
+            }
+
+        }        
+    }
+
+}
+
+.about_page, .university_page {
+
+    .about_page_container, .university_page_container {
+        width:90.69%;
+    }
+
+}
+
+.books_page {
+    .books_page_nav {
+        border: none;
+        ._container {
+            align-items: center;
+            flex-wrap: wrap;
+            .clct {
+               padding: 0px 20px 20px 0; 
+               span {
+                background: #0087F0;
+                color:#fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 16px;
+                border-radius: 12px;
+               }
+               a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               }
+            }
+        }
+    }
+    .books_page_content {
+        ._container {
+            .books_page_list {
+                width:100%;
+                min-width: 0px;
+            }
+            .book_sticker_right_coll {
+                display: none;
+            }
+            
+        }
+    }
+    
+}
+
+.links_app_big_banner {
+    padding: 42px 28px 54px 28px;
+    >div {
+        min-width: 0px;
+        width:100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        span {
+            max-width: 224px;
+            padding-top: 48px;
+        }
+    }
+    
+}
+.book_sticker 
+{
+    ._container {
+        .book_sticker_book {
+            width:100%;
+            .book_sticker_book_desc {
+                .b_s_for_catalogue {
+                    margin: 12px 0;
+                }
+            }
+        }
+        .book_sticker_table_of_content {
+            display: none;
+            
+        }
+    }
+}
+
+._mobile_tableOfContent{
+    display: flex;
+}
+
+
+.download_page {
+
+    .download_page_container {
+
+        .download_page_blocks {
+
+            .download_block {
+                width:47.59%;
+            }
+
+        }
+
+    }
+
+}
+
+
+.mobile_control-panel {
+    display: flex;
+}
+.books_page {
+    .books_page_content_top_panel {
+        &_watch-total {
+            margin-right: 0px;
+        }
+    }
+}

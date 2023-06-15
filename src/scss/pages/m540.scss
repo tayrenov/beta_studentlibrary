@@ -1,0 +1,42 @@
+.acaunt_access {
+    .right_container_1row {
+        justify-content: space-between;
+        .acaunt_access_code {
+            min-width: 100%;
+            margin-bottom: 24px;
+        }
+        .acaunt_access_captcha {
+            width: 34%;
+            min-width: 0;
+            margin: 0;
+            input {
+                width:100%;
+            }
+        }
+    }
+}
+
+.restore_pw_page ._container .rest_pw_inputs 
+.captcha_block {
+    align-items: center;
+    .captcha {
+        width:33.98%;
+        img {
+            width:100%;
+        }
+    }
+}
+
+.control-panel_wrapper{
+    .control-panel_container {
+        width: 100%;
+        height: 100vh;
+        padding: 80px 24px 12px 24px;
+    }
+    .control-panel_export {
+        grid-template-columns: 1fr;
+    }
+    .control-panel_close {
+        top:80px;
+    }
+} 

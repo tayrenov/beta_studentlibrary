@@ -1,0 +1,137 @@
+._btn {
+    padding: 14px 24px;
+    text-align: center;
+    background: #178AED;
+    color:#fff;
+    border-radius: 26px;
+}
+
+._btn {
+    background: #1370c1;
+    color:#fff;
+}
+
+._add_to_basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    > span {
+        text-align: center;
+        font-weight: 700;
+        font-size: .7rem;
+    }
+    a {
+        text-transform: uppercase;
+        background: #1370c1;
+        border-radius: 6px;
+        margin-top: 8px;
+        display: block;
+        color:#fff;
+        font-size: .7rem;
+        padding: 4px 8px;
+        font-weight: 700;
+    }
+    a:hover {
+        color:#fff;
+        
+    }
+}
+
+.links_app_mini_banner {
+    padding: 43px 35px 35px 35px;
+    background: rgba(107, 210, 253, 0.5);
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    > div {
+        width:38.120%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        > img:first-child {
+            margin-bottom: 18px;
+        }
+        img {
+            width:100%;
+        }
+    }
+
+    > span {
+        display: block;
+        max-width: 284px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+        color: #000;
+    }
+}
+
+.links_app_big_banner {
+    margin: 40px 0 62px 0;
+    padding: 42px 108px 54px 35px;
+    background: #6BD2FD url('img/banner_app.jpg') 20px center no-repeat;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    h1 {
+        font-size:1.4rem;
+        color:#000;
+        font-weight: 600;
+        margin-bottom: 24px;
+        text-shadow: 0 0 4px #fff;
+    }
+    >div {
+        min-width: 630px;
+        width:54.92%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        h1 {width:100%;}
+        > div {
+            width:20.04%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+            margin-right: 26px;
+            
+            > img:first-child {
+                margin-bottom: 18px;
+            }
+            img {
+                width:100%;
+            }
+        }
+    
+        > span {
+            display: block;
+            max-width: 284px;
+            text-align: center;
+            font-size: 1rem;
+            color: #000;
+            text-shadow: 0 0 6px #6BD2FD;
+            padding-top: 36px;
+        }
+    }
+    
+}
+
+.reader_need_reg {
+    > span {
+        text-align: center;
+        > a {
+            width:200px;
+            padding: 12px 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

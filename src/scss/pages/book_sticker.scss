@@ -1,0 +1,458 @@
+.book_sticker {
+    ._container {
+        display: flex;
+        justify-content:space-between;
+        .book_sticker_book {
+            display: flex;
+            flex-direction: column;
+            width:56.967%;
+            min-width: 484px;
+            margin-bottom: 62px;
+            .book_sticker_book_main {
+                display: flex;
+                position: relative;
+            }
+            .talking_head_div_wrapper {
+                display: none;
+                width:100vw; height: 100vh;
+                position: fixed;
+                top:0;left:0;
+                div {
+                    background: rgba(0,0,0,.3); 
+                    width: 100%; height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    audio {
+                        width:80%;
+                        margin: 0 auto 60px auto;
+                    }
+                }
+            }
+            .talking_head_div_on {
+                display: block;
+            }
+            .sticker_reader_book_img {
+                margin-right: 0px auto;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                top:-14px;
+                background: #fff;
+                padding-top: 16px;
+
+                > img {
+                    width:65px;
+                    box-shadow: 0 0 4px rgba(0,0,0,.3);
+                    border-radius: 14px;
+                }
+                
+                > .b_s_icons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+                    top:-16px;
+                    .book_img_circle {
+                        width:26px; height:26px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 16px;
+                        box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+                        margin-left: 8px;
+                        background: #fff;
+                    }
+                    .book_img_circle:first-child {
+                        margin-left: 0;
+                    }
+                    .book_img_circle:empty {
+                        display: none;
+                    }
+                }
+
+            }
+            .sticker_reader_book_img:first-child {
+                margin-left: 0px;
+            }
+            .sticker_reader_book_img:empty {
+                display: none;
+            }
+            .book_sticker_book_coll {
+                display: flex;
+                flex-direction: column;
+                padding-left: 34px;
+                box-sizing: border-box;
+                .b_s_table {
+                    margin-bottom: 16px;
+                    .head {
+                        margin-right:14px;
+                        color: #000;
+                    }
+                }
+                .b_s_author {
+                    .head {
+                        display: none;
+                    }
+                }
+                
+                h2 {
+                    font-weight: 700;
+                    font-size: 1.75rem;
+                    margin: 8px 0 14px 0;
+                }
+                > div {
+                    >a {
+                        display: block;
+                        padding: 14px 24px;
+            text-align: center;
+            border-radius: 26px;
+            color: #fff;
+            background: #0087F0;
+            margin-top: 12px;
+                    }
+                }
+            }
+            .b_s_type_prototype {
+                margin-bottom: 16px;
+                display: flex;
+                flex-direction: column;
+                .head {
+                    margin-bottom:14px;
+                    color: rgba(0,0,0,.5);
+                }
+            }
+            .b_s_for_catalogue {
+                border-top:1px solid #d3d3d3;
+                border-bottom: 1px solid #d3d3d3;
+                display: flex;
+                padding: 12px 0;
+                flex-direction: row;
+                box-sizing: border-box;
+                margin: 28px 0;
+                overflow-x: scroll;
+                .head {
+                    display: none;
+                }
+                .value {
+                    color:#828282;
+                    line-height: 1.3em;
+                    white-space:pre-wrap;
+                }
+                .book_sticker_copy_to_clipboard {
+                    min-width: 104px;
+                    width: 104px;
+                    display: flex;
+                    flex-direction: column;
+                    cursor:pointer;
+                    span {
+                        font-size: .8rem;
+                    }
+                    img {
+                        width:15px;height:15px;
+                        margin-top: 6px;
+                    }
+                }
+            }
+
+            .b_s_for_annotation {
+                margin-bottom: 16px;
+                display: flex;
+                flex-direction: column;
+                line-height: 1.4rem;
+                .head {
+                    display: none;
+                    margin-bottom:14px;
+                    color: rgba(0,0,0,.5);
+                }
+            }
+            .b_s_for_grif {
+                margin-bottom: 16px;
+                display: flex;
+                flex-direction: column;
+                .head {
+                    margin-bottom:14px;
+                    color: rgba(0,0,0,.5);
+                }
+            }
+            .book_sticker_book {
+                width:100%;
+                .table {
+                    //border-radius: 6px;
+                    overflow: hidden;
+                    width:100%;
+                    border-collapse: collapse;
+                    tbody {
+                        border-radius: 6px;
+                        border-collapse: collapse;
+                        border-top:1px solid #333;
+                        border-left:1px solid #333;
+                        tr {
+                            display: grid;
+                            grid-template-columns:82px 102px 1fr 1fr 1fr;
+                            td {
+                                border-bottom: 1px solid #333;
+                                border-right:1px solid #333;
+                                transition:background .5s;
+                                padding: 12px;
+                                box-sizing: border-box;
+                                color:#000;
+                            }
+                            td:nth-child(odd) {
+                                background: #fff;
+                            }
+                            td:nth-child(even) {
+                                background: #fff;
+                            } 
+                            td:nth-child(3),
+                            td:nth-child(4), 
+                            td:nth-child(5) {
+                                text-align: center;
+                            }
+                        }
+                        tr:first-child:hover {
+                            
+                            td:nth-child(odd) {
+                                background: #fff;
+                            }
+                            td:nth-child(even) {
+                                background: #fff;
+                            } 
+                        }
+                        tr:hover {
+                            td {
+                                background: rgb(232, 232, 232);
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .book_sticker_table_of_content {
+            display: flex;
+            flex-direction: column;
+            width: 31.546%;
+            min-width: 272px;
+            h3 {
+                display: block;
+                font-weight: 700;
+                font-size: 1.2em;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #d3d3d3;
+                position: relative;
+            }
+            h3:before {
+                
+            }
+            > a {
+                margin: 8px 0;
+                color:#000;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #d3d3d3;
+            }
+
+            .aTCont {
+                display:flex;
+                flex-direction: column;
+                line-height: 1.4rem;
+                a {color:#000}
+                a:hover {color:#000}
+                .aTCont-row-doc {
+                    margin: 8px 0;
+                    color:#000;
+                    padding-bottom: 18px;
+                    border-bottom: 1px solid #d3d3d3; 
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .aTCont-row-doc-a {
+                        display: block;
+                        width:92%;
+                        line-height: 1.4rem;
+                    }
+
+                    .aTCont-row-childs-a-on,
+                    .aTCont-row-childs-a-off {
+                        display: block;
+                        width:8%;
+                        font-size: 0;
+                    }
+
+                    .aTCont-row-childs-a-on {
+                        background: url('img/arrow_on.svg') center center no-repeat;
+                    }
+                    .aTCont-row-childs-a-off {
+                        background: url('img/arrow_off.svg') center center no-repeat;
+                    }
+
+                    .aTCont-row-childs {
+                        width:100%;
+
+                        > .aTCont-row-sect:first-child {
+                            margin-top: 12px;
+                        }
+                        > .aTCont-row-sect {
+                            margin-bottom: 12px;
+                            padding-left: 0.8em;
+                            > .aTCont-row-sect {
+                                margin-top: 12px;
+                                margin-bottom: 12px;
+                                padding-left: 16px;
+                            }
+                            > .aTCont-row-sect:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                        > .aTCont-row-sect:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            .bTCont {
+                display:flex;
+                flex-direction: column;
+                line-height: 1.4rem;
+                a {color:#000}
+                a:hover {color:#000}
+                .bTCont-row-doc {
+                    margin: 8px 0;
+                    color:#000;
+                    padding-bottom: 18px;
+                    border-bottom: 1px solid #d3d3d3; 
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .bTCont-row-doc-a {
+                        display: block;
+                        width:92%;
+                        
+                    }
+
+                    .bTCont-row-childs-a-on,
+                    .bTCont-row-childs-a-off {
+                        display: block;
+                        width:8%;
+                        font-size: 0;
+                    }
+
+                    .bTCont-row-childs-a-on {
+                        background: url('img/arrow_on.svg') center center no-repeat;
+                    }
+                    .bTCont-row-childs-a-off {
+                        background: url('img/arrow_off.svg') center center no-repeat;
+                    }
+
+                    .bTCont-row-childs {
+                        width:100%;
+
+                        > .bTCont-row-sect:first-child {
+                            margin-top: 12px;
+                        }
+                        > .bTCont-row-sect {
+                            margin-bottom: 12px;
+                            padding-left: 0.8em;
+                            > .bTCont-row-sect {
+                                margin-top: 12px;
+                                margin-bottom: 12px;
+                                padding-left: 16px;
+                            }
+                            > .bTCont-row-sect:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                        > .bTCont-row-sect:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ._btn {
+        display: inline-block;
+        margin: 0 24px 0 0;
+    }
+    .b_s_buttons {
+        display: flex;
+        flex-wrap: nowrap;
+        a {
+            white-space: nowrap;
+        }
+    }
+    .b_s_buttons {
+        img {
+            max-width: 20px;
+        }
+    }
+    .b_s_b_buttons {
+        display: flex;
+        position: absolute;
+        top:0px;right:8px;
+        > img {
+            display: none;
+        }
+        > div {
+            width:26px; height:26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+            margin-left: 8px;
+            background: #fff;
+            img {
+                width:20px;
+            }
+
+        }
+        >div:first-child {
+            margin-left: 0px;
+        }
+        >div:empty {
+            display: none;
+        }
+
+    }
+
+    ._add_to_basket {
+        a {
+            white-space: nowrap;
+            margin-top: 0px;
+            font-size: .54rem;
+        }
+    }
+}
+
+._mobile_tableOfContent{
+    display: none;
+}
+
+.b_s_b_buttons {
+    display: flex;
+    position: relative;
+    top:0px;right:8px;
+    > div {
+        width:26px; height:26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+        margin-left: 8px;
+        background: #fff;
+        img {
+            width:20px;
+        }
+
+    }
+    >div:first-child {
+        margin-left: 0px;
+    }
+    >div:empty {
+        display: none;
+    }
+
+}

@@ -1,0 +1,49 @@
+.idx_app {
+    height:426px;
+    display: flex;
+    justify-content: center;
+    background:#6BD2FD url("img/banner_app.jpg") center center no-repeat;
+    margin-bottom: 80px;
+    background-size: cover;
+    ._container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .idx_app_content {
+            display: flex;
+            flex-direction: column;
+            h1 {
+                max-width: 506px;
+                font-size: 1.625em;
+                font-weight: 700;
+                margin-bottom: 35px;
+                text-shadow: 0px 0px 4px #fff;
+            }
+            > div {
+                display: flex;
+                justify-content: space-between;
+                .link_app {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height:178px;
+                    margin-right: 40px;
+                    img {
+                        border-radius: 15px;
+                        box-shadow:0px 10px 20px rgba(0, 0, 0, 0.05)
+                    }
+                    img:last-child {
+                        width:120px;
+                        margin: 0 auto;
+                        border-radius: 6px;
+                        margin-top:16px;
+                    }
+                }
+                p {
+                    max-width: 204px;
+                }
+            }
+        }
+    }
+}

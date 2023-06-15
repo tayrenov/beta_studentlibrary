@@ -1,0 +1,43 @@
+.university_page {
+    margin-bottom: 62px;
+    .university_banner {
+
+        img {
+            display: block;
+            width:100%;
+            border-radius: 12px;
+        }
+
+    }
+
+    .university_page_container {
+        width:852px;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 80px 0 18px 0;
+        }
+        p {
+            line-height: 1.3em;
+            text-indent: 24px;
+            margin-bottom: 18px;
+        }
+        > span {
+            text-align: justify;
+            line-height: 1.3rem;
+            font-size: 1.25em;
+            margin-bottom: 24px;
+        }
+
+        li {
+            margin-bottom: 24px;
+        }
+        li:last-child {
+            margin-bottom: 24px;
+        }
+
+    }
+
+}

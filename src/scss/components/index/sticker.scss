@@ -1,0 +1,284 @@
+.usr_idx_subscribes {
+    margin:40px 0 54px 0;
+    .subs_header {
+        margin-bottom: 52px;
+    }
+    .sticker_title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 24px;
+    }
+    .all_subs {
+        position:relative;
+        box-sizing: border-box;
+        padding: 8px 14px 8px 14px;
+        border:1px solid #000;
+        border-radius: 30px;
+        text-align: center;
+        margin-left: 26px;
+        color:#000;
+        transition: color .5s, border .5s;
+    }
+    .all_subs:hover {
+        color:#0087F0;
+        border:1px solid #0087f0;
+    }
+    .all_subs:after {
+        content:'';
+        position: absolute;
+        top:10px; right:10px;
+        font-size: 1rem;
+    }
+    .all_subs:after:hover { 
+        color: #0087F0;
+    }
+    .your_empty_sticker_id {
+        .sticker_title:hover {color:#000;}
+        .empty_sticker {
+            width:100%;
+            padding: 24px 0 22px 40px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.23);
+            border-radius: 20px;
+            background: #fff url("img/idx-sticer_sub-img.png") bottom right no-repeat;
+            box-sizing: border-box;
+            .lk_subsc_instr {
+                display: flex;
+                img {
+                    width:56px;height:56px;
+                    margin-right: 26px;
+                }
+                .empty_sticker_sub_title {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        width:299px;
+                        color:#178AED;
+                        font-weight: 700;
+                        font-size: 1.75rem;
+                    }
+                    p {
+                        width:299px;
+                        font-size: 1em;
+                        color:rgba(0, 0, 0, 0.5);
+                        margin-top:8px;
+                    }
+                }
+            }
+            > span {
+                max-width: 424px;
+                font-size: 1em;
+                margin-left: 74px;
+            }
+        }
+
+    }
+
+}
+
+.def_section_subs {
+    .sticker_container {
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .wrap-one-subscription {
+            font-weight: 400;
+            width:31.52%;
+            height:134px;
+            min-width: 200px;
+            background: #FFFFFF;
+            display: none;
+            margin-right: 30px;
+            a {
+                margin: 0 auto;
+                width:100%; height: 100%;
+                color:#000;
+                font-weight: 700;
+                display: flex;
+                justify-content: flex-end;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+                border-radius: 20px;
+                overflow: hidden;
+                border: 1px solid #000;
+                span {
+                    width:244px;
+                    padding: 40px 40px 6px 20px;
+                    text-align: right;
+                    display: flex;
+                    justify-content: flex-end;
+                    box-sizing: border-box;
+                }
+            }
+            a:hover {
+                color:#000;
+            }
+        }
+        .wrap-one-subscription:nth-child(1) {
+            display: block;
+            a {
+                background: #f2a62d url("img/idx_sticker_ico1.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(2) {
+            display: block;
+            a {
+                background: #f2a62d url("img/idx_sticker_ico2.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(3) {
+            display: block;
+            a {
+                background: #f2a62d url("img/idx_sticker_ico3.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(4) {
+            display: block;
+            a {
+                background: #f2a62d url("img/idx_sticker_ico4.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(5) {
+            a {
+                background: #f2a62d url("img/idx_sticker_ico1.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(6) {
+            a {
+                background: #f2a62d url("img/idx_sticker_ico2.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(7) {
+            a {
+                background: #f2a62d url("img/idx_sticker_ico3.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(8) {
+            a {
+                background: #f2a62d url("img/idx_sticker_ico4.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(9) {
+            a {
+                background: #f2a62d url("img/idx_sticker_ico1.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(10) {
+            a {
+                background: #f2a62d url("img/idx_sticker_ico2.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(11) {
+            a {
+                background: #f2a62d url("img/idx_sticker_ico3.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .wrap-one-subscription:nth-child(12) {
+            a {
+                background: #f2a62d url("img/idx_sticker_ico4.jpg") no-repeat;
+                background-size: 216px;
+            }
+        }
+        .swiper-button-prev, .swiper-button-next {
+            z-index: 0;
+            top:-62px;
+            width:46px;
+            height: 44px;
+            border-top: 1.4px solid #0087F0;
+            border-bottom: 1.4px solid #0087F0;
+            transition: background .5s;
+        }
+        .swiper-button-prev:hover, .swiper-button-next:hover {
+            background: rgba(255,255,255,.3);
+        }
+        .swiper-button-next {
+            right:6px;
+            border-right: 1.4px solid #0087F0;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .swiper-button-prev {
+            left:auto;
+            right:52px;
+            border-left: 1.4px solid #0087F0;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        .swiper-button-next:after, .swiper-button-prev:after{
+            content:'';
+            width:100%;
+            height:100%;
+            position: relative;
+
+        }
+        .swiper-button-next:after {
+            background: url('img/sl_arrow_right_blue.svg') center center no-repeat;
+        }
+        .swiper-button-prev:after {
+            background: url('img/sl_arrow_left_blue.svg') center center no-repeat;
+        }
+        .swiper-pagination {
+            z-index: 0;
+            display: block;
+            width:80px;
+            top:-76px;right: 100px;
+            bottom: auto;left:auto;
+            font-weight: 300;
+            font-size: 1.75rem;
+            color:#000;
+        }
+        .wrap-one-subscription:nth-child(4) {
+            display: none;
+        }
+        .wrap-one-subscription:nth-child(5) {
+            display: none;
+        }
+        .wrap-one-subscription:nth-child(6) {
+            display: none;
+        }
+        .wrap-one-subscription:nth-child(7) {
+            display: none;
+        }
+        .wrap-one-subscription:nth-child(8) {
+            display: none;
+        }
+        .wrap-one-subscription:nth-child(9) {
+            display: none;
+        }
+    }
+}
+
+.all_subs_page {
+    .subs_header {
+        margin-bottom: 10px!important;
+    }
+    .def_section_subs {
+        .sticker_container {
+            margin-top: 20px!important;
+            margin-bottom: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+            .wrap-one-subscription {
+                margin-bottom: 20px;
+                width:320px;
+                >a {
+                    width:100%;
+                }
+            }
+        }
+        
+    }
+}

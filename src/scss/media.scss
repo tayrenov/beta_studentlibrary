@@ -1,0 +1,51 @@
+@media (max-width:1220px) {
+    @import 'pages/m1220.scss';
+}
+
+@media (max-width:1090px) {
+    @import 'components/headers/m1090.scss';
+}
+
+@media (max-width:1020px) {
+    @import 'components/headers/m1020.scss';
+    @import 'pages/m1020.scss';
+}
+
+@media (max-width:980px) {
+    @import 'components/headers/m980.scss';
+}
+
+@media (max-width:920px) {
+    @import 'components/headers/m920.scss';
+    @import 'pages/m920.scss';
+}
+@media (max-width:760px) {
+    @import 'components/headers/m760.scss';
+}
+
+@media (max-width:700px) {
+    @import 'components/headers/m700.scss';
+    @import 'pages/m700.scss';
+}
+
+@media (max-width:720px) {
+    @import 'components/headers/m720.scss';
+    @import 'pages/m720.scss';
+}
+
+@media (max-width:620px) {
+    @import 'components/headers/m620.scss';
+    @import 'pages/m620.scss';
+}
+
+@media (max-width:580px) {
+    @import 'components/headers/m580.scss';
+}
+
+@media (max-width:540px) {
+    @import 'pages/m540.scss';
+}
+
+@media (max-width:480px) {
+    @import 'pages/m480.scss';
+}

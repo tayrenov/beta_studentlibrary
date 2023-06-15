@@ -1,0 +1,78 @@
+.catalogue_page {
+    margin-bottom: 62px;
+    .catalogue_page_naw  {
+
+        border-bottom: 1px solid #d3d3d3;
+        margin-bottom: 42px;
+        ._container {
+            display: flex;
+            > span, > a {
+                display: block;
+                margin-right: 20px;
+                position: relative;
+                top: 1px;
+                padding-bottom: 12px;
+                
+                font-size: 1.75rem;
+                font-weight: 700
+            }
+            > span {
+                color:rgba(0,0,0,1);
+                border-bottom: 2px solid #0087F0;
+            }
+            > a {
+                color: rgba(0,0,0,.3);
+            }
+        }
+    }
+
+    .catalogue_page_container {
+
+        .kits_tree {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:14px;
+            > div {
+                width:100%;
+                min-width: 250px;
+                box-sizing: border-box;
+                .kt-item {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 24px;
+                    align-items: center;
+                    
+                    >.item-head {
+                        display: block;
+                        width:86%;
+                        line-height: 1.3rem;
+                    }
+                    a {
+                        margin-right: 12px;
+                        color:#000;
+                        text-decoration: underline;
+                    }
+                    img {
+                        width:20px;
+                    }
+                    > div {
+                        width:100%;
+                        padding-left: 32px;
+                        margin-top: 12px;
+                    }
+                    .kt {
+                        margin-bottom: 12px;
+                    }
+                    > div {
+                        .kt-item:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

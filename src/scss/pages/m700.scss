@@ -1,0 +1,48 @@
+.left_container {
+    display: none;
+}
+
+.bmarks_page, .restore_pw_page {
+    ._container {
+        .right_wrapper {
+            width: 100%;
+        }
+    }
+}
+
+.right_wrapper {
+    width:100%;
+}
+
+.acaunt_access {
+    .right_container_1row {
+        justify-content: space-between;
+        .acaunt_access_code {
+            min-width: 171px;
+        }
+        .acaunt_access_captcha {
+            min-width: 116px;
+        }
+        .acaunt_access_captcha_img {
+            margin: 0;
+        }
+        .acaunt_access_act_btn {
+            width:100%;
+            margin-top: 24px;
+        }
+    }
+}
+
+.general_page {
+
+    ._container {
+
+        .general_row3col {
+            
+            .input_block {
+                width:100%;
+                max-width: 100%;
+            }
+        }
+    }
+}

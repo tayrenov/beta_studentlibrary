@@ -1,0 +1,118 @@
+.person_acc_query_page {
+    margin-bottom: 62px;
+    ._container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right_container  {
+        padding-bottom: 0;
+    }
+    .person_acc_query {
+        padding: 24px 32px;
+        .prompts_select-cover {
+            margin-bottom: 24px;
+            position: relative;
+            input{ 
+                width:100%;
+            }
+            > .prompts_select {
+                > a {
+                    padding-left: 12px;
+                    color:#333;
+                    transition: color .5s;
+                }
+                > a:hover {
+                    color:#0087F0;
+                }
+            }
+            .prompts-list {
+                box-shadow: 0 2px 4px rgba(0,0,0,.3);
+                position: absolute;
+                left:18px;
+                z-index: 2;
+                > div {
+                    cursor: pointer;
+                    padding: 12px 8px;
+                    box-sizing: border-box;
+                    color:#333;
+                    background: #fff;
+                    transition: color .5s, background .5s;
+                }
+                > div:hover {
+                    color:#fff;
+                    background: #0087F0;
+                }
+            }
+        }
+        > label {
+            display: block;
+            margin-bottom: 12px;
+        }
+        label {
+            font-size: 1em;
+        }
+
+        input {
+            font-size: 1rem;
+            opacity: .5;
+            border-radius: 24px;
+            padding: 16px 8px 16px 24px;
+            box-sizing: border-box;
+            border: 1px solid #000; 
+            outline:none; 
+            color: #000;
+            transition: opacity .5s;
+        }
+        input:focus {
+            opacity: 1;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+            label {
+                margin-bottom: 12px;
+            }
+        }
+        .form-group:nth-child(1),
+        .form-group:nth-child(2),
+        .form-group:nth-child(3),
+        .form-group:nth-child(4) {
+            input {
+                border: 1px solid #d3d3d3;
+                opacity: 1;
+                background: #d3d3d3;
+                color:#000;
+            }
+            input:focus {
+                opacity: 1;
+            }
+        }
+        .form-group:nth-child(5),
+        .form-group:nth-child(6) {
+            input {
+                transition:opacity .5s, background .5s, color .5s;
+            }
+            input:focus {
+                border:1px solid #0087F0;
+                color:#0087F0;
+            }
+        }
+        .btn {
+            width:100%;
+            background: #178AED;
+            border-radius: 32px;
+            padding: 16px 0;
+            border-radius: 32px;
+            color:#fff;
+            transition:background .5s;
+            text-align: center;
+            margin-top: 24px;
+        }
+        .btn:hover {
+
+            background: #1164ac;
+
+        }
+    }
+}

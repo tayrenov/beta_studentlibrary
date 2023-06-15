@@ -1,0 +1,51 @@
+@import '../components/index/g_idx_banner.scss';
+
+@import '../components/index/g_nav.scss';
+
+@import '../components/index/slider_read.scss';
+
+@import '../components/index/sticker.scss';
+
+@import '../components/index/banner_app.scss';
+
+@import '../components/index/news.scss';
+
+.idx_error {
+    ._errors_ {
+        width:90.69%;
+        max-width: 1440px;
+        min-width: 300px;
+        padding: 0 10px;
+        margin:0 auto;
+        ._errors_container {
+            .wrap-ssp {
+
+            }
+            .wrap-err {
+                
+            }
+            ._errors_close-btn {
+
+            }
+            .def_ssp_msg,.def_err_msg {
+                width: 100%;
+                padding:0 0 24px 0px;  
+                background: #fff;
+                border-radius: 24px;
+                box-sizing: border-box;
+                .hdr {
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                }
+                ul {
+                    li:first-child {
+                        margin-top:0px;
+                    }
+                    li {
+                        margin-top:12px;
+                    }
+                }
+            }
+        }
+    }
+}

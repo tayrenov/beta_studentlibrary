@@ -1,0 +1,97 @@
+.main_content_instruction {
+    margin-bottom: 64px;
+    ._container {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 24px;
+        position: relative;
+        .main_content_instruction_content {
+            h1 {
+                display: block;
+                margin-bottom: 16px;
+                font-size: 1.625em;
+                font-weight: 600;
+
+            }
+            .instruction_title {
+                display: block;
+                padding-bottom: 8px;
+                color:#333;
+                border-bottom: 1px solid #333;
+                background: url('img/mini_arrow_right_black.svg') center right no-repeat;  
+                transition: color .5s, border-bottom .5s, background .5s;
+            }
+            .instruction_title.instructionDropDown_title_active {
+                color: #0087F0;
+                border-bottom: 1px solid #0087F0;
+                background: url('img/mini_arrow_bottom_blue.svg') center right no-repeat;  
+            }
+            > div {
+                line-height: 1.2em;
+                span {
+                    display: block;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+                p {
+                    margin-bottom: 16px;
+                }
+                i {
+                    font-style: italic;
+                }
+                b {
+                    font-weight: 600;
+                }
+                >div {
+                    >div {
+                        padding-left: 24px;
+                        >span {
+                            font-weight: 600;
+                            margin-bottom: 16px;
+                        }
+                        >p {
+                            margin-bottom: 16px;
+                        }
+                    }
+                    
+                }
+                img {
+                    max-width: 100%;
+                    margin: 16px 0px;
+                    box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+                    border-radius: 6px;
+                }
+                ul {
+                    list-style:inside;
+                    li {
+                        margin-top:12px;
+                        padding-left: 12px;
+                    }
+                }
+            }
+            .instruction_content {
+                display: none;
+                opacity: 0;
+                transition: opacity .5s;
+            }
+            .instructionDropDown_content_active {
+                display: block;
+            }
+            .instructionDropDown_content_active_opacity {
+                opacity: 1;
+            }
+        }
+
+        .main_content_instruction_nav {
+            line-height: 1.2em;
+            nav {
+
+            }
+            .main_content_instruction_nav_title {
+                padding:16px 0px 16px 6px;
+                border-bottom: 1px solid #d3d3d3 ;
+                cursor: pointer;
+            }
+        }
+    }
+}

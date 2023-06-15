@@ -1,0 +1,97 @@
+._mobile_tableOfContent {
+    position: relative;
+    flex-direction: column;
+    padding-top: 12px;
+    border-top: 1px solid #d3d3d3;
+    margin-top: 24px;
+    cursor: pointer;
+    h2 {
+        font-weight: 600;
+    }
+    ._mobile_tableOfContent_arrow {
+        position: absolute;
+        top:10px; right:0;
+        background:url('img/mobile_tableOfContent_off.svg') right center no-repeat;
+        width:50px;height: 22px;
+
+    }
+    ._mobile_tableOfContent_arrow_open {
+        background:url('img/mobile_tableOfContent_on.svg') right center no-repeat;
+    }
+    .aTCont {
+        display: none;
+        flex-direction: column;
+        margin-top: 4px;
+        .aTCont-row-doc {
+            margin: 8px 0;
+            color: #000;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #d3d3d3;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
+            .aTCont-row-doc-a {
+                display: block;
+                width: 97%;
+                line-height: 1.4rem;
+
+
+            }
+            .aTCont-row-childs-a-on, 
+            .aTCont-row-childs-a-off {
+                width:12px;
+                height:24px;
+                font-size: 0px;
+            }
+            .aTCont-row-childs-a-on {
+                background: url("img/arrow_on.svg") center center no-repeat;
+            }
+            .aTCont-row-childs-a-off {
+                background: url("img/arrow_off.svg") center center no-repeat;
+            }
+            > p {
+                border-top: 1px solid #d3d3d3;
+                padding-top: 18px;
+                margin-top: 18px;
+            }
+            >.aTCont-row-childs-a-off,
+            >.aTCont-row-childs-a-on {
+                position: absolute;
+                top:0; right:0;
+            }
+            >.aTCont-row-childs {
+                > .aTCont-row-sect {
+                    padding:12px 0 0 14px;
+                    box-sizing: border-box;
+                    >a {
+                        padding:12px 0 0 14px;
+                    }
+                    > .aTCont-row-sect {
+                        padding:12px 0 0 14px;
+                        box-sizing: border-box;
+                    }
+                }
+
+            }
+            
+        } 
+        .aTCont-row-doc:first-child {
+            padding-top: 18px;
+            border-top: 1px solid #d3d3d3;
+        }
+        .aTCont-row-doc:last-child {
+            border-bottom: none;
+            padding-bottom: 0px;
+        }
+        a {
+            color:#000;
+        }
+    }
+}
+
+._mobile_tableOfContent_open {
+    .aTCont {
+        display: flex;
+    }
+}

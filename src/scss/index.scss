@@ -1,0 +1,57 @@
+/***Main***/
+
+@import 'const/reset.scss';
+@import 'const/fonts.scss';
+@import 'const/main.scss';
+@import 'const/grid.scss';
+
+/***Components****/
+
+@import 'components/_components.scss';
+
+@import 'components/_wrapper.scss';
+@import 'components/errors.scss';
+@import 'components/headers/_main.scss';
+@import 'components/headers/_sub.scss';
+@import 'components/headers/_pop_up.scss';
+@import 'components/headers/header_search_container.scss';
+@import 'components/footer.scss';
+@import 'components/search_panel.scss';
+@import 'components/mobile_tableOfContent.scss';
+
+/***Pages***/
+
+@import 'pages/index.scss';
+@import 'pages/auth.scss';
+@import 'pages/news.scss';
+@import 'pages/mail_to_admin.scss';
+@import 'pages/components/left_menu.scss';
+@import 'pages/components/right_container.scss';
+@import 'pages/components/nav_bottom.scss';
+@import 'pages/components/form_with_search.scss';
+@import 'pages/bmarks.scss';
+@import 'pages/restore_password.scss';
+@import 'pages/my_lists_page.scss';
+@import 'pages/general.scss';
+@import 'pages/accaunt_access.scss';
+@import 'pages/notifications_cont.scss';
+@import 'pages/person_acc_query.scss';
+@import 'pages/checking_borrowings.scss';
+@import 'pages/reports.scss';
+@import 'pages/edt_org.scss';
+@import 'pages/catalogue_page.scss';
+@import 'pages/about.scss';
+@import 'pages/university_page.scss';
+@import 'pages/all_subs_page.scss';
+@import 'pages/book_sticker.scss';
+@import 'pages/books.scss';
+@import 'pages/download_page.scss';
+@import 'pages/basket_page.scss';
+@import 'pages/cover_guide_area.scss';
+@import 'pages/all_rd_books.scss';
+@import 'pages/access_demands_labrarian.scss';
+@import 'pages/instruction.scss';
+@import 'pages/extra.scss';
+/***media****/
+
+@import 'media.scss';

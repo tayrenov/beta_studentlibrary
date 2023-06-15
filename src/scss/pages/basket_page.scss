@@ -1,0 +1,316 @@
+.basket_page {
+    margin-bottom: 62px;
+    ._container {
+        position: relative;
+        .basket_buttons {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 24px;
+            justify-content: start;
+            padding-bottom: 22px;
+            border-bottom: 1px solid #d3d3d3;
+            .basket_button {
+                box-sizing: border-box;
+                text-align: left;
+                border: none;
+                background: #fff;
+                position: relative;
+                font-size: 1.2rem;
+                padding: 0px;
+            }
+            .basket_button.btncur {
+                color:#000;
+
+            }
+            .basket_button.btndis {
+                color:#d3d3d3;
+            }
+        }
+
+        > h2 {
+            font-weight: 600;
+            width: 100%;
+            margin-top: 24px;
+            font-size: 1.2em;
+        }
+
+        > a {
+            position: absolute;
+            top:4px; right:10px;
+            display: block;
+            border: none;
+            color:#000;
+            transition: color .5s;
+            text-decoration: underline;
+        }
+        > a:hover {
+            color:#0087F0;
+        }
+        .basket_page_contant {
+            margin-top: 22px;
+            table {
+                img {
+                    width:24px;
+                }
+            }
+            > div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 22px;
+                border-bottom: 1px solid #d3d3d3;
+                position: relative;
+                padding-bottom: 22px;
+                box-sizing: border-box;
+                font-size: 1.1em;
+                line-height: 1.2em;
+                a {
+                    font-weight: 600;
+                    color:#000;
+                    margin-bottom: 12px;
+                    transition: color .5s;
+                }
+                a:hover {
+                    color:#0087F0;
+                }
+                a:last-child {
+                    cursor: pointer;
+                    position: absolute;
+                    top:0px; right:6px;
+                    width:12px; height:12px;
+                    background: url('img/close.svg') center center no-repeat;
+                    background-size: cover;
+                    transition: background .5s;
+                }
+                a:last-child:hover {
+                    background: url('img/close_blue.svg') center center no-repeat;
+                    background-size: cover;
+                }
+            }
+            .basket_button_complete {
+                width:340px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+                margin: 16px 0 24px 0;
+                border-bottom: none;
+                input {
+                    display: block;
+                    background:#fff;
+                    border: 1px solid #0087F0;
+                    color:#0087F0;
+                    padding: 12px 6px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    border-radius: 22px;
+                    transition: all .5s;
+                }
+
+                input:hover {
+                    background:#0087F0;
+                    border: 1px solid #0087F0;
+                    color:#fff;
+                }
+            }
+            >span {
+                font-size: 1rem;
+            }
+
+            .basket_order_info {
+                border-bottom: none;
+                .shop3_your_wares {
+                    > .head {
+                        padding-bottom: 8px;
+                        margin: 12px 0;
+                        
+                    }    
+                    >div {
+                        position: relative;
+                        border-bottom: 1px solid #d3d3d3;
+                        margin-bottom: 12px;
+                        a {
+                            font-weight: 600;
+                            color:#000;
+                            margin-bottom: 12px;
+                            transition: color .5s;
+                            display: block;
+                            
+                        }
+                        a:hover {
+                            color:#0087F0;
+                        }
+                    } 
+                    
+                    .shop3_basket_total {
+                        padding: 8px 0;
+                        margin:0 0 12px 0;
+
+                        .head {
+                            font-weight: 600;
+                        }   
+
+                    }
+
+                     
+
+                }
+                .shop3_your_order_info {
+
+                    .head {
+                        margin-top: 12px;
+                        margin-bottom: 12px;
+                    }
+
+                }
+
+                .shop3_your_user_info {
+                    width:340px;
+                    > .head {
+                        margin: 12px 0;
+                        padding: 12px 0;
+                        font-weight: 600;
+                        text-align: center;
+                        border-top: 1px solid #d3d3d3;
+                        border-bottom: 1px solid #d3d3d3;
+                    }
+                    .reg_online {
+                        
+                        .data_row {
+                            
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            padding-bottom: 6px;
+                            margin-bottom: 12px;
+                            border-bottom: 1px solid #d3d3d3;
+                            > div:first-child {
+                                margin-right: 14px;
+                            }
+                            > div:last-child {
+                                font-weight: 600;
+                                padding-bottom: 6px;
+                            }
+                        }
+                    }
+                }  
+
+                
+            }
+
+            .basket_info {
+                text-transform: capitalize;
+                font-size: 1.2em;
+            }
+
+            .basket_form {
+                width:100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                                    "Org Org Org Org"
+                                    "N N Cont Cont"
+                                    "Em Em Ph Ph"
+                                    "T T T T";
+                column-gap:18px;
+                row-gap:14px;
+                border-bottom: 1px solid #fff;
+                margin-bottom: 0px;
+                .basket_form_row {
+                    display: flex;
+                    flex-direction: column;
+                    input, textarea {
+                        border: 1px solid #000;
+                        color:#000;
+                        border-radius: 12px;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        outline: none;
+                        background: #fff;
+                        transition: color .5s, border .5s;
+                        order:2;
+                        margin-top: 8px;
+                        font-size: 1.1rem;
+                        resize: none;
+                    }
+                    span {
+                        order:1;
+                        transition: color .5s;
+                    }
+                    input:focus {
+                        color:#0087F0;
+                        border: 1px solid #0087F0;
+                    }
+                    input:focus + span {
+                        color:#0087F0;
+                    }
+                    textarea:focus {
+                        color:#0087F0;
+                        border: 1px solid #0087F0;
+                    }
+                    textarea:focus + span {
+                        color:#0087F0;
+                        
+                    }
+                }
+                .basket_form_row-name {
+                    grid-area: N;
+                }
+                .basket_form_row-org {
+                    grid-area: Org;
+                }
+                .basket_form_row-contact {
+                    grid-area: Cont;
+                }
+                .basket_form_row-email {
+                    grid-area: Em;
+                }
+                .basket_form_row-phone {
+                    grid-area: Ph;
+                }
+                .basket_form_row-textarea {
+                    grid-area: T;
+                }
+            }
+        }
+
+        .basket_page_nav-btns {
+            margin-top: 0px;
+            .btndis {
+                opacity: 0;
+            }
+            > div {
+
+                > div {
+                    display: grid;
+                    grid-template-columns: 136px 136px;
+                    column-gap: 24px;
+                    justify-content: space-between;
+                    .basket_button {
+                        padding: 6px;
+                        box-sizing: border-box;
+                        text-align: center;
+                        border-radius: 22px;
+                        font-size: 1.1rem;
+                        text-transform: capitalize;
+                    }
+                    .basket_button.btncur {
+                        
+                    }
+                    .basket_button.btndis, .basket_button.btnok {
+                        background:#fff;
+                        border: 1px solid #0087F0;
+                        color:#0087F0;
+                        transition: all .5s;
+                    }
+                    .basket_button.btnok:hover {
+                        background:#0087F0;
+                        border: 1px solid #0087F0;
+                        color:#fff;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}

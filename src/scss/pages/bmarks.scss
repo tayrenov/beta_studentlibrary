@@ -1,0 +1,120 @@
+.bmarks_page {
+    ._container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 62px;
+        .right_wrapper {
+            width: 73.813%;
+        }
+        .right_container {
+            width:100%;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.20);
+            border-radius: 16px;
+            padding-bottom: 32px;
+            h2 {
+                padding: 28px 32px;
+                font-weight: 700;
+                font-size: 1.5em;
+                border-bottom: 1px solid #D8D8D8;;
+            }
+            > div {
+                > .bm-title {
+                    display: none;
+                }
+                .usr_own_bmarks {
+                    margin-top: 24px;
+                    .bmark-title {
+                        position: relative;
+                        width:91.417%;
+                        margin: 0 auto;
+                        border: 1px solid #D8D8D8;
+                        border-radius: 12px;
+                        margin-bottom: 24px;
+                        a {
+                            color:#000;
+                            
+                        }
+                        a:hover {
+                            color:#000;
+                        }
+                        > a:first-child {
+                            display: block;
+                            width:100%;
+                            padding: 16px 24px 16px 24px;
+                            box-sizing: border-box;
+                        }
+                        > .kill_href {
+                            position: absolute;
+                            top:16px;
+                            right: 16px;
+                            padding: 0;
+                        }
+                        .bmark-item {
+                            padding: 16px 0 16px 24px;
+                            position: relative;
+
+                            >a:first-child {
+                                display: block;
+                            }
+                            > .kill_href {
+                                position: absolute;
+                                top:16px;
+                                right: 16px;
+                                padding: 0;
+                            }
+                            .bmark-tab {
+                                display: inline-block;
+                                width:120px;
+                                padding: 12px 28px 12px 12px;
+                                border: 1px solid #D8D8D8;
+                                border-radius: 32px;
+                                margin: 12px 10px 0 0;
+                                > .kill_href {
+                                    margin-left: 10px;
+                                    
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .ge-cmds {
+                    text-align: center ;
+                    padding-bottom: 32px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: flex-end;
+                    >span, > a {
+                        margin: 6px 4px 0 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: color .5s, border .5s;
+                        border-radius: 24px;
+                    }
+                    >span {
+                        width:24px; height:24px;
+                        border:1px solid #0087F0;
+                        color:#0087F0;
+                    }
+                    >a {
+                        width:24px; height:24px;
+                        border:1px solid #000;
+                        color:#000;
+                    }
+                    >a:hover {
+                        border:1px solid #0087F0;
+                        color:#0087F0;
+                    }
+                    > div {
+                        width:100%;
+                        margin: 12px 0 12px 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

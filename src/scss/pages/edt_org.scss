@@ -1,0 +1,419 @@
+.edt_org_page {
+    margin-bottom: 62px;
+    ._container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .edt_org_page_right {
+        padding: 24px 32px;
+        .ge-cmds {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .ge-pgs-buttons {
+            input {
+                display: flex;
+                justify-content: center;
+                padding: 8px;
+                box-sizing: border-box;
+                width:159px;
+                font-size: 1rem;
+                font-weight: 700;
+                border:1px solid #d3d3d3;
+                transition: all .5s;
+                color:#d3d3d3;
+                border-radius: 16px;
+                margin: 4px auto;
+                background: #fff;
+            }
+            input:hover {
+                border:1px solid #000;
+                color:#000;
+            }
+
+        }
+
+        > div {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 14px;
+            .bm-title {
+                font-weight: 600;
+            }
+            .bm-line {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap:24px;
+                margin-top: 16px;
+                > .bm-cur {
+                    padding: 12px 6px;
+                    box-sizing: border-box;
+                    background: #0087F0;
+                    border: 1px solid #0087F0;
+                    color:#fff;
+                    border-radius: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                > .bm-jmp {
+                    border: 1px solid #0087F0;
+                    background: #fff;
+                    padding: 12px 6px;
+                    box-sizing: border-box;
+                    transition: all .5s;
+                    border-radius: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width:100%;
+                        height:100%;
+                        transition: all .5s;
+                        color:#0087F0;
+                    }
+                }
+                > .bm-jmp:hover {
+                    border: 1px solid #0087F0;
+                    background: #0087F0;
+                    a {color:#fff;}
+                }
+            }
+            .ge-spanel {
+                display: grid;
+                grid-template-columns: 1fr 102px 42px;
+                gap: 14px;
+                input[type="text"] {
+                    background: 0;
+                    padding: 6px 12px;
+                    box-sizing: border-box;
+                    border: 1px solid #d3d3d3;
+                    color:#000;
+                    background: #fff;
+                    border-radius: 12px;
+                    transition: all .5s;
+                }
+                input[type="text"]:active {
+                    border: 1px solid #0087F0;
+                    color:#0087F0;
+                }
+
+                input[type="button"] {
+                    text-align: center;
+                    border-radius: 24px;
+                    border: 1px solid #0087F0 ;
+                    color:#0087F0;
+                    background: #fff;
+                    transition: all .5s;
+                }
+                input[type="button"]:hover {
+                    color:#fff;
+                    background:#0087F0;
+                }
+            }
+
+            > table {
+                width: 100% !important;
+                >tbody {
+                    tr {
+                        height: 36px;
+                        display: grid;
+                        grid-template-columns: 32px 32px 1fr;
+                        column-gap: 6px;
+                        font-size: 1.3rem;
+                        transition: all .5s;
+                        > td {
+                            width:auto!important;
+                            display: flex;
+                            align-items: center;
+                            background: none!important;
+                            transition: all .5s;
+                            a {
+                                color:#000;
+                                transition: all .5s;
+                            }
+                        }
+                        > td:first-child {
+                            border-right: 1px solid #d3d3d3;
+                            padding-left: 6px;
+                            box-sizing: border-box;
+                        }
+
+                        > td:nth-child(2) {
+                            border-right: 1px solid #d3d3d3;
+                        }
+
+                        > td:nth-child(3) {
+                            font-weight: 600;
+                        }
+
+                        > td:last-child {
+                            display: none;
+                        }
+                    }
+                    tr:nth-child(odd) {
+                        background: #b1d1ea;
+                    }
+                    tr:hover {
+                        background:#0087F0;
+                        td {
+                            color:#fff;
+                        }
+                        a {
+                            color:#fff
+                        }
+                    }
+                }
+            }
+
+            .ge-cmds {
+                display: flex;
+                align-items: center;
+                font-size: 1.2rem;
+                justify-content: center;
+                flex-wrap: wrap;
+                a, span {
+                    margin:0 0 12px 6px;
+                    width: 44px; height:44px;
+                    border-radius: 34px;
+                }
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #0087F0;
+                    color:#0087F0;
+                    transition: all .5s;
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #d3d3d3;
+                    color:#000;
+                    transition: all .5s;
+                }
+                a:hover {
+                    border: 1px solid #0087F0;
+                    color:#0087F0;
+                }
+                .ge-pgs-info {
+                    width:100%;
+                    text-align: center;
+                }
+            }
+
+            > .ge-button {
+                border: 1px solid #0087F0;
+                background: #fff;
+                padding: 12px 6px;
+                box-sizing: border-box;
+                transition: all .5s;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color:#0087F0
+            }
+
+            > .ge-button:hover {
+                border: 1px solid #0087F0;
+                background: #0087F0;
+                color:#fff
+            }
+
+            .ge-dialog {
+                >p {
+                    display: block;
+                    width:100%;
+                }
+                img {
+                    max-width: 100%;
+                    margin: 0 auto 24px auto;
+                }
+                .org_div_row {
+                    display: grid;
+                    grid-template-columns: minmax(120px,1fr) minmax(110px,150px);
+                    column-gap: 14px;
+                    margin-bottom: 14px;
+
+                    input, select {
+                        padding: 6px 12px;
+                        border: 1px solid #000;
+                        box-sizing: border-box;
+                        border-radius: 16px;
+                        color:#000;
+                        background: #fff;
+                        transition: all .5s;
+                        outline: none;
+                    }
+                    input:focus, select:focus {
+                        border: 1px solid #0087F0;
+                        color: #0087F0;
+                    }
+
+                }
+                > input {
+                    width:100%!important;
+                    margin: 14px 0;
+                    box-sizing: border-box;
+                    padding: 12px 6px;
+                    border-radius: 6px;
+                    background: #fff;
+                    border: 1px solid #000;
+                    color:#000;
+                    transition: all .5s;
+                    outline: none;
+                }
+                >input:focus {
+                    border: 1px solid #0087F0;
+                    color:#0087F0;
+                }
+
+                .form-group {
+                    display: grid;
+                    grid-template-columns:1fr;
+                    row-gap: 14px;
+                    margin-bottom: 14px;
+                    label {
+                        display: grid;
+                        align-items: center;
+                    }
+                    input {
+                        box-sizing: border-box;
+                        padding: 12px 6px;
+                        border-radius: 6px;
+                        background: #fff;
+                        border: 1px solid #000;
+                        color:#000;
+                        transition: all .5s;
+                        outline: none;
+                    }
+                    input:focus {
+                        border: 1px solid #0087F0;
+                        color:#0087F0;
+                    }
+                }
+            }
+        }        
+
+    }
+}
+
+.edt_organisations_ {
+    .edt_org_page_right {
+        > div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            textarea {
+                resize: none;
+            }
+            .ge-spanel {
+                width:100%;
+            }
+            .bm-line {
+                width:100%;
+            }
+            .ge-pgs-buttons {
+                margin: 0 auto;
+            }
+            > .ge-dialog {
+                width:100%;
+                .clcstat_org_dlg {
+                    font-size: 1.1em;
+                    .clcstat_org_dlg_row {
+                        width:100%;
+                        margin-bottom: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                            margin-bottom:12px;
+                        }
+
+                        > textarea {
+                            font-size: 1.2em;
+                            width:100%;
+                            border-radius: 16px;
+                            padding: 6px 12px;
+                            box-sizing: border-box;
+                        }
+
+                    }
+                    > a {
+                        display: block;
+                        margin: 12px 0;
+                        color:#0087F0;
+                        text-decoration: underline;
+                        transition: color .5s;
+                    }
+                    > a:hover {
+                        color:#005ba0
+                    }
+
+                    .clcstat_more_area {
+                        select {
+                            font-size: 1.2em;
+                            border-radius: 12px;
+                            padding: 6px 12px;
+                            box-sizing: border-box;
+                            width: 100%;
+                            appearance:none;
+                            background:url("img/select_arrow_black.svg") 98% 15px no-repeat, #fff;
+                        }
+                        textarea {
+                            font-size: 1.2em;
+                            resize: none;
+                            border-radius: 16px;
+                            width:100%;
+                            margin: 18px 0;
+                            box-sizing: border-box;
+                        }
+                    }
+                    
+                }
+                .clcstat_org_dlg_date textarea {
+                    resize: none;
+                    border-radius: 12px;
+                }
+                .chb-use_demand {
+                    margin: 16px 0px;
+                }
+                .org_div_row {
+                    input {
+                        padding: 12px 6px;
+                        box-sizing: border-box;
+                    }
+                    select {
+                        background:url("img/select_arrow_black.svg") 92% 16px no-repeat, #fff;
+                        appearance:none;
+                    }                
+                }
+            }
+            > .ge-button {
+                width:15%;
+                height:32px;
+                padding: 0px 24px;
+            }
+        }
+    }
+}
+
+
+.error_container.edt_org_error {
+    padding-bottom: 35px;
+    ._errors_ {
+        .hdr {
+            padding: 0;
+        }
+        ul {
+            li {
+                line-height: 1.2em;
+                margin: 0.4em 0;
+            }
+        }
+    }
+}

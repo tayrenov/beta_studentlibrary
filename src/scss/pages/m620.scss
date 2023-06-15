@@ -1,0 +1,362 @@
+body {
+    .entry_wrapper {
+        align-items: center;
+        justify-content: center;
+        .entry_container {
+            width:100%;
+            height:100%;
+            min-height: 100vh;
+            border-radius: 0;
+            margin: 0;
+            padding: 60px 20px;
+            .to-index {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:40px; height:40px;
+                border-radius: 20px;
+                box-shadow: 0px 2px 4px -3px rgba(0, 0, 0, 0.25);
+                border: 1px solid #E4E9EC;
+                background: #fff;
+                transition: background .5s;
+            }
+
+            .to-index:hover {
+                background:#f1f1f1;
+            }
+
+            .logo_mobile {
+                display: flex;
+                margin-top: 30px;
+            }
+            .logo_mobile-to_rest {
+                display: none;
+            }
+            .entry_nav {
+                margin-top: 60px;
+                width:100%;
+                max-width:308px;
+                span {
+                    font-size: 1.275em;
+                }
+            }
+        }
+        .login_form {
+            .u_name, 
+            .u_pass,
+            .btn {
+                width:100%;
+                max-width: 360px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+        .btn_fedurus {
+            max-width: 360px;
+            margin: 24px auto 0 auto;
+        }
+    
+        .reg_form {
+            ._form {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin: 0 auto;
+                .r_name, 
+                .r_fio, 
+                .r_pass, 
+                .r_confirm_pass, 
+                .r_login, 
+                .r_email, 
+                .r_phone,
+                .r_status,
+                .r_country,
+                .r_captcha,
+                .btn {
+                    width:100%;
+                    max-width: 360px;
+                    margin-left:auto;
+                    margin-right:auto;
+                }
+                .r_fio {
+                    margin-top: 24px;
+                }
+                .btn {
+                    margin-top: 24px;
+                }
+                .r_country {
+                    .select1, .select2 {
+                        width:155px!important;
+                    }
+                }
+            }
+    
+            .r_captcha{
+                .r_captcha_input {
+                    width:100%;
+                    max-width: 360px;
+                    margin:0 auto;
+                }
+                .captcha_img {
+                    width:120px;
+                }
+            }
+        }
+
+        ._errors_ {
+            width:100%;
+            
+            ._errors_container {
+                .def_err_msg {
+                    padding: 44px 20px 24px 20px;
+                    border-radius: 0px;
+                    border-bottom: 1px solid #d3d3d3;
+                }
+            }
+        }
+    }
+}
+
+.footer_wrapper  {
+
+    .footer_container {
+
+        .footer_logo {
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            img {
+                width:240px;
+            }
+
+        }
+        .row_nav, .row_2{
+            width:100%;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a {
+                text-align: center;
+                width:50%;
+            }
+        }
+        .f_coll.last_coll {
+            flex-wrap: wrap;
+            .last_col_block {
+                text-align: center;
+            }
+            .last_col_block:nth-child(3) {
+                width:100%;
+                text-align: center;
+            }
+        }
+    }
+
+}
+.footer_wrapper .footer_sub_container {
+
+    ._container {
+        grid-template-columns: 40px 1fr;
+        .f_coll_social {
+            justify-content: right;
+            width:auto;
+        }
+
+        .f_adres {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin-top: 20px;
+            color:#fff;
+        }
+    }
+}
+
+.idx_app {
+    height:466px;
+    display: flex;
+    justify-content: center;
+    background: #6BD2FD url("img/banner_app_2.png") center top no-repeat;
+    ._container {
+        align-items: flex-start;
+        .idx_app_content {
+
+            h1 {
+                margin-top: 140px;
+                width:100%
+            }
+            > div {
+                justify-content: flex-start;
+                .link_app:first-child {
+                    margin-right: 30px;
+                }
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.guest_idx_nav {
+
+    .guest_idx_nav_container {
+
+        .idx_nav_el {
+            span {
+                font-size: 0.875em;
+            }
+        }
+    }
+}
+
+
+.g_idx_banner {
+    height: 228px;
+    .g_idx_banner_container {
+
+        h1 {
+            max-width: 256px;
+            font-size: 1em;
+            line-height: 1.2rem;
+        }
+        .g_idx_banner_pic {
+            right:-20px;
+            width: 310px; height: 228px;
+        }
+    }
+}
+
+.usr_slider_read {
+    background: url('img/idx_slider_img.jpg') 40% top no-repeat;
+}
+
+.idx_slider_read {
+    .idx_slider_subtitle {
+        display: flex;
+        justify-content: space-between;
+    }
+    .swiper-button-prev, .swiper-button-next, .swiper-pagination {
+        display: none!important;
+    }
+}
+.subs_header {
+    display: flex;
+    justify-content: space-between;
+}
+.sticker_container {
+    .swiper-button-prev, .swiper-button-next, .swiper-pagination {
+        display: none!important;
+    }
+}
+
+.usr_idx_subscribes .all_subs {
+    display: none;
+}
+.mail_to_admins {
+    ._container {
+        flex-direction: column;
+        margin-bottom:120px;
+        .mail_to_admins_coll {
+            width:100%;
+            position: relative;
+            .btn {
+                position: absolute;
+                bottom:-516px;
+            }
+
+        }
+
+    }    
+}
+.book_sticker {
+    ._add_to_basket {
+        position: relative;
+        top:24px;
+        margin-top: 8px;
+    }
+}
+
+.book_sticker ._container .book_sticker_book .book_sticker_book_coll h2 {
+    font-size: 1.75rem;
+}
+
+.book_sticker .b_s_buttons {
+    flex-direction: column;
+
+    a {
+        margin-right: 0;
+    }
+    a:last-child {
+        margin-top: 24px;
+    }
+}
+
+.book_sticker .b_s_b_buttons {
+    position: absolute;
+    left: 3px; top: 200px;
+}
+
+.usr_idx_subscribes {
+
+    .def_section_subs {
+        .subs_header {
+            margin-bottom: 0;
+        }
+        .sticker_container {
+            margin-top: 0px;
+            .wrap-one-subscription {
+                width:100%;
+                a {
+                    width:100%;
+                }
+                
+            }
+            .wrap-one-subscription:nth-child(1) {
+                a {
+                    margin: 0 ;
+                }
+            }
+            .wrap-one-subscription:nth-child(2) {
+                margin-top: 18px;
+                a {
+                    
+                    margin: 0 ;
+
+                } 
+            }
+        }
+    }
+}
+
+.basket_page ._container .basket_buttons .basket_button.btndis {
+    display: none;
+}
+
+.general_page ._container .general_row1col .input_block.region_block > div {
+    flex-direction: column;
+    > span {
+        width:100%!important;
+    }
+}
+
+.general_page ._container .general_row2col {
+    flex-direction: column;
+    .input_block {
+        width:100%;
+        input {
+            box-sizing: border-box;
+            width:100%;
+        }
+    }
+}
+
+.page_my_subscriptions {
+
+    .def_section_subs .sticker_container {
+        grid-template-columns: 1fr;
+    }
+
+}

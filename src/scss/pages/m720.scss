@@ -1,0 +1,166 @@
+.search_panel {
+    ._search_panel_row {
+        ._container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        ._search_panel_search {
+            padding-top: 36px;
+            select {
+                min-width:223px;
+                width:100%;
+                background:url("img/select_arrow.svg") 98% 14px no-repeat, #178AED
+            }
+
+            > input[type="text"] {
+                margin-top: 16px;
+                width:100%;
+                background: url("img/searchBtn.svg") 98% center no-repeat;
+                border: 1px solid #000;
+                box-sizing: border-box;
+                border-radius: 8px;
+            }
+
+            > input[type="button"] {
+                position: absolute;
+                background: #178AED;
+                color:#fff;
+                text-align: center;
+                width:96.69%;
+                bottom: -182px;
+                margin-right: 0px;
+
+            }
+            > input[type="button"]:hover {
+                background: #136ebe;
+            }
+            .SearchText_prompts {
+                top:124px; left:0;
+            }
+            .search_panel_close_btn {
+                position: absolute;
+                top:6px;
+                right:10px;
+                min-width:0;
+                width:24px; height:24px;
+                font-size: 0rem;
+            }
+
+        }
+        ._search_panel_parameters {
+            display: flex;
+            align-items: center;
+            padding: 16px 0;
+
+            ._search_panel_parameters_checkboxs {
+                width: 100%;
+
+            }
+
+        }
+
+    } 
+    ._search_panel_row:first-child {
+            padding: 0;
+            border-bottom: none;
+    }
+    ._search_panel_row:nth-child(2) {
+        padding-bottom: 56px;
+        align-items: flex-start;
+        ._search_panel_parameters {
+            align-items: flex-start;
+            ._search_panel_parameters_scope {
+                width:100%;
+                margin-bottom: 16px;
+                min-width: 280px;
+                font-size: .8rem;
+                align-items: center;
+                > div {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            ._search_panel_parameters_checkboxs {
+                width:100%;
+                margin-bottom: 16px;
+            }
+            ._search_panel_parameters_year {
+                
+                input[type="number"] {
+                    padding:4px 0px 2px 4px;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
+.search_panel.active {
+    top:0px;
+}
+
+.search_panel {
+    .searchPanel_block {
+        
+        top:314px;
+        height: calc(100vh - 314px);
+        ._wrapper {
+            height: 100%;
+            ._container {
+                height: 100%;
+                box-sizing: border-box;
+                padding-bottom: 36px;
+                flex-wrap: nowrap;
+                .searchPanel_block_list {
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    min-height:96px;
+                    height: 100%;
+                    .extsearch_gds_col3 {
+                        width:100%;
+                        height:auto;
+                    }
+                    > a {
+                        display: none;
+                    }
+                }
+                .search_panel_info {
+                    position: relative;
+                    top:16px;
+                }
+            }
+        }
+    
+    }
+}
+
+.search_panel_info {
+    display: block;
+    width:234px;
+    margin: 0 auto;
+}
+
+.usr_idx_subscribes .your_empty_sticker_id .empty_sticker > span{
+    display: none;
+}
+
+.page_my_subscriptions .your_empty_sticker_id .empty_sticker > span {
+    display: none;
+}
+
+.books_page_content_top_panel {
+    flex-wrap: wrap;
+    .wrap-ul-pagination {
+        order:2;
+    }
+    .books_page_content_top_panel_watch-total {
+        order:3;
+    }
+    .wrap-quantity-title {
+        order:1;
+        width:100%;
+    }
+}

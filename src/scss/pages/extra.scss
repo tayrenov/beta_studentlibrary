@@ -1,0 +1,19 @@
+.extra_page {
+    font-size: 1.1em;
+    margin-bottom: 64px;
+    .bktests {
+        margin-bottom: 1.2em;
+        line-height: 1.2em;
+        border-top: 1px solid #d3d3d3;
+        padding-top: 1.2em;
+    }
+    .bktests-anm {
+        margin-top: 1em;
+    }
+    a {
+        transition:color .5s;
+    }
+    a:hover {
+        color:#0b3f68;
+    }
+}

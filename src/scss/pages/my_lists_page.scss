@@ -1,0 +1,150 @@
+.my_lists_page {
+
+    ._container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 62px;
+    }
+
+    .right_wrapper {
+
+        .right_container {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0;
+
+            .my_lists_page_list,
+            .my_lists_page_list_edt {
+                padding: 32px 32px 0 32px;
+            }
+
+            .right_container_title {
+                order: 1;
+            }
+            .my_lists_page_list {
+                order: 2;
+                table {
+                    margin-bottom: 20px;
+                    width:100%;
+                    tr {
+                        margin-bottom: 12px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    td {
+                        display: flex;
+                        align-items: center;
+                        input {
+                            margin:0 16px 0 0;
+                            width:18px;
+                            height:18px;
+                        }
+                        a {
+                            font-size: 1.3em;
+                            color:#000;
+                        }
+                        a:hover {
+                            color:#0087F0;
+                        }
+                    }
+                }
+            }
+            .my_lists_page_list_edt {
+                order: 3;
+                border-top: 1px solid #D8D8D8;;
+                label{
+                    margin-bottom: 14px;
+                    font-weight: 600;
+                    display: block;
+                    width:100%;
+                }
+                .my_lists_page_list_edt_btns {
+                    display: flex;
+                    justify-content: space-between;
+                    input {
+                        width:48%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1rem;
+                        padding: 16px 24px;
+                        box-sizing: border-box;
+                        color:#000;
+                        border: 1px solid #000;
+                        border-radius: 26px;
+                        background: #fff;
+                        transition: all .5s;
+                        margin-bottom: 24px;
+                    }
+                    input:hover {
+                        background: rgb(234, 234, 234);
+                        color:#000;
+                        border: 1px solid #000;
+                    }
+                }
+                .my_lists_page_list_edt_email {
+                    display: flex;
+                    justify-content: space-between;
+                    input[type="text"] {
+                        width: 68%;
+                        border-radius: 16px;
+                    }
+                    input[type="button"] {
+                        width: 28%;
+                        border-radius: 26px;
+                    }
+                    input {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1rem;
+                        padding: 16px 24px;
+                        box-sizing: border-box;
+                        color:#000;
+                        border: 1px solid #000;
+                        
+                        background: #fff;
+                        transition: all .5s;
+                        margin-bottom: 24px;
+                    }
+                    input:hover {
+                        background: rgb(230, 230, 230);
+                        color:#000;
+                        border: 1px solid #000;
+                    }
+                    input:active {
+                        color:#000;
+                    }
+                }
+            }
+            .my_lists_page_panel {
+                order:4;
+                display: flex;
+                justify-content: center;
+                width:90%;
+                background: #fff;
+                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, .2);
+                position: relative;
+                top:22px;
+                padding: 8px 12px 8px 12px;
+                margin: 0 auto;
+                border-radius: 60px;
+                label {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1rem;
+                    input[type="radio"] {
+                        width:16px; height:16px;
+                    }
+
+                }
+            }
+            .my_lists_page_list {
+                margin-bottom: 32px;
+            }
+
+        }
+        
+    }
+
+}
