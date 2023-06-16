@@ -169,11 +169,8 @@
                 order: 4;
                 display: flex;
                 justify-content: center;
-<<<<<<< HEAD
-=======
                 flex-wrap: wrap;
                 gap: 10px;
->>>>>>> Sergey
                 width: 90%;
                 background: #fff;
                 box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, .2);
@@ -199,41 +196,44 @@
 
             .my_lists_page_list {
                 margin-bottom: 32px;
-                /**/
             }
         }
     }
 }
-
-.my_lists_page_panel {
+.my_lists_page_panel_form_radio {
 	display: inline-block;
 	margin-right: 10px;
 }
-.my_lists_page_panel input[type=radio] {
+.my_lists_page_panel_form_radio input[type=radio] {
 	display: none;
 }
-.my_lists_page_panel label {
+.my_lists_page_panel_form_radio label {
 	display: inline-block;
 	cursor: pointer;
 	padding: 0px 15px;
 	line-height: 34px;
-	border: 1px solid #999;
-	border-radius: 6px;
+	border: 1px solid #fff;
+	border-radius: 20px;
 	user-select: none;
+    color: #fff;
+    background: #0087F0;
+    transition: background .5s;
 }
  
 /* Checked */
-.my_lists_page_panel input[type=radio]:checked + .my_lists_page_panel {
-	background: #ffe0a6;
+.my_lists_page_panel_form_radio input[type=radio]:checked + label {
+	background: #006fc5;
+    color: #fff;
 }
  
 /* Hover */
-.my_lists_page_panel label:hover {
-	color: #666;
+.my_lists_page_panel_form_radio label:hover {
+	background: #006fc5;
+    color: #fff;
 }
  
 /* Disabled */
-.my_lists_page_panel input[type=radio]:disabled + label {
+.my_lists_page_panel_form_radio input[type=radio]:disabled + label {
 	background: #efefef;
 	color: #666;
 }
