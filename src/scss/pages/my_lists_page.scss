@@ -21,78 +21,123 @@
             .right_container_title {
                 order: 1;
             }
+
             .my_lists_page_list {
                 order: 2;
+
                 table {
                     margin-bottom: 20px;
-                    width:100%;
+                    width: 100%;
+
                     tr {
                         margin-bottom: 12px;
                         display: flex;
                         align-items: center;
                     }
+
                     td {
                         display: flex;
                         align-items: center;
+
                         input {
-                            margin:0 16px 0 0;
-                            width:18px;
-                            height:18px;
+                            margin: 0 16px 0 0;
+                            width: 18px;
+                            height: 18px;
                         }
+
                         a {
                             font-size: 1.3em;
-                            color:#000;
+                            color: #000;
                         }
+
                         a:hover {
-                            color:#0087F0;
+                            color: #0087F0;
                         }
                     }
                 }
             }
+
             .my_lists_page_list_edt {
                 order: 3;
-                border-top: 1px solid #D8D8D8;;
-                label{
+                border-top: 1px solid #D8D8D8;
+                ;
+
+                label {
                     margin-bottom: 14px;
                     font-weight: 600;
                     display: block;
-                    width:100%;
+                    width: 100%;
                 }
+                hr{
+                   margin-bottom: 30px;
+                    border-width: 0 0 13px;
+                    border-style: solid;
+                    border-image: url('img/spisok_circle.svg') 0 0 100% repeat;
+                    width: 100%;
+            }
                 .my_lists_page_list_edt_btns {
                     display: flex;
                     justify-content: space-between;
+
                     input {
-                        width:48%;
+                        width: 48%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         font-size: 1rem;
-                        padding: 16px 24px;
-                        box-sizing: border-box;
-                        color:#000;
-                        border: 1px solid #000;
-                        border-radius: 26px;
-                        background: #fff;
                         transition: all .5s;
                         margin-bottom: 24px;
+                        color: #fff;
+                        padding: 11px 12px;
+                        box-sizing: border-box;
+                        background: #0087F0;
+                        border-radius: 20px;
+                        white-space: nowrap;
+                        border: 1px solid #fff;
+                        transition: background .5s;
+
                     }
+
                     input:hover {
-                        background: rgb(234, 234, 234);
-                        color:#000;
-                        border: 1px solid #000;
+                        background: #006fc5;
+                        color: #fff;
                     }
                 }
+
                 .my_lists_page_list_edt_email {
                     display: flex;
                     justify-content: space-between;
+
                     input[type="text"] {
                         width: 68%;
                         border-radius: 16px;
+                        border: 1px solid #D8D8D8;
+                        transition: border .5s, color .5s;
+                        padding: 11px 12px;
                     }
+
+                    input[type="text"]:focus {
+                        border: 1px solid #0087F0;
+                        color: #0087F0; }
+
                     input[type="button"] {
                         width: 28%;
                         border-radius: 26px;
+                        color: #fff;
+                        padding: 11px 12px;
+                        box-sizing: border-box;
+                        border: 1px solid #fff;
+                        background: #0087F0;
+                        border-radius: 20px;
+                        white-space: nowrap;
+                        transition: background .5s;
                     }
+
+                    input[type="button"]:hover {
+                        background: #006fc5;
+                        color: #fff;
+                    }
+
                     input {
                         display: flex;
                         justify-content: center;
@@ -100,51 +145,95 @@
                         font-size: 1rem;
                         padding: 16px 24px;
                         box-sizing: border-box;
-                        color:#000;
+                        color: #000;
                         border: 1px solid #000;
-                        
+
                         background: #fff;
                         transition: all .5s;
                         margin-bottom: 24px;
                     }
-                    input:hover {
-                        background: rgb(230, 230, 230);
-                        color:#000;
-                        border: 1px solid #000;
-                    }
-                    input:active {
-                        color:#000;
-                    }
+
+                    // input:hover {
+                    //     background: rgb(230, 230, 230);
+                    //     color: #000;
+                    //     border: 1px solid #000;
+                    // }
+
+                    // input:active {
+                    //     color: #000;
+                    // }
                 }
             }
+
             .my_lists_page_panel {
-                order:4;
+                order: 4;
                 display: flex;
                 justify-content: center;
-                width:90%;
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 90%;
                 background: #fff;
                 box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, .2);
                 position: relative;
-                top:22px;
+                top: 22px;
                 padding: 8px 12px 8px 12px;
                 margin: 0 auto;
                 border-radius: 60px;
+
                 label {
                     display: flex;
                     align-items: center;
                     font-size: 1rem;
+
                     input[type="radio"] {
-                        width:16px; height:16px;
+                        width: 16px;
+                        height: 16px;
                     }
 
                 }
+                
             }
+
             .my_lists_page_list {
                 margin-bottom: 32px;
             }
-
         }
-        
     }
-
+}
+.my_lists_page_panel_form_radio {
+	display: inline-block;
+	margin-right: 10px;
+}
+.my_lists_page_panel_form_radio input[type=radio] {
+	display: none;
+}
+.my_lists_page_panel_form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	user-select: none;
+    color: #fff;
+    background: #0087F0;
+    transition: background .5s;
+}
+ 
+/* Checked */
+.my_lists_page_panel_form_radio input[type=radio]:checked + label {
+	background: #006fc5;
+    color: #fff;
+}
+ 
+/* Hover */
+.my_lists_page_panel_form_radio label:hover {
+	background: #006fc5;
+    color: #fff;
+}
+ 
+/* Disabled */
+.my_lists_page_panel_form_radio input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
 }
